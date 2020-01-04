@@ -1,0 +1,211 @@
+// This is the place to place Bootstrap-related CSS customizations.
+// As example you can start by importing the _bootswatch.scss file from one of the
+// theme provided by https://bootswatch.com .
+
+// Cosmo 4.3.1
+// Bootswatch
+
+
+// Variables ===================================================================
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Lato:300,400,700" !default;
+@import url($web-font-path);
+
+// Navbar ======================================================================
+
+.navbar {
+    z-index: 9999999;
+}
+
+.floating-navbar {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s ease 0s;
+    position: fixed;
+    width: 100%;
+}
+
+.floating-navbar.solid {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: background-color 0.7s ease 0s;
+}
+
+.static-navbar {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+// Buttons =====================================================================
+
+.btn-orange {
+    background-color: #ff9900;
+    color: #000000 !important;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #000000;
+}
+
+.btn-normal {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 1;
+    padding: .9em 1.6em;
+    border-width: 0;
+    border-style: solid;
+}
+
+// Typography ==================================================================
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: black;
+}
+
+section {
+    font-size: 18px;
+}
+
+.slogan {
+    font-size: 60px;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+}
+
+.text-black {
+    color: $black;
+}
+
+.bg-black {
+    background-color: $black !important;
+}
+
+.title {
+    font-size: 60px;
+}
+
+h1 {
+    padding-bottom: 50px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.home-text {
+    font-size: 30px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: black;
+    text-align: left;
+}
+
+.highlight-red {
+    color: #ff0000;
+}
+.highlight-orange {
+    color: #ff9900;
+}
+
+.nav-item {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+// Tables ======================================================================
+
+// Forms =======================================================================
+
+// Navs ========================================================================
+
+// Indicators ==================================================================
+
+// Progress bars ===============================================================
+
+.progress {
+  @include box-shadow(none);
+  .progress-bar {
+    font-size: 8px;
+    line-height: 8px;
+  }
+}
+
+// Containers ==================================================================
+
+.parallax {
+    /* The image used */
+    background-image: url("/images/background.jpg");
+    background-color: #000000;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.columns {
+    background-image: url("/images/columns.jpg");
+    background-color: #000000;
+
+    /* Create the parallax scrolling effect */
+    background-size: cover;
+    background-position: top;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.banner {
+    /* Set a specific height */
+    height: 937px;
+    padding-top: 450px;
+    padding-bottom: 200px;
+    position: relative;
+    text-align: center;
+}
+
+.black-gradient {
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 60%);
+}
+.releases-section {
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 20%) !important;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.padding-top-200 {
+    padding-top: 200px;
+}
+.padding-bottom-100 {
+    padding-bottom: 100px;
+}
+
+.home-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.description {
+    margin-top: 50px;
+}
+
+.page-content {
+    min-height: 54vh;
+    background-color: white;
+}
+
+// Github
+
+.border-gray-light {
+    border-color: #eaecef !important;
+}
+
+.rounded-1 {
+    border-radius: 3px !important;
+}

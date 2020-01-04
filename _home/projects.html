@@ -1,0 +1,17 @@
+  <section class="home-section bg-white">
+    <div class="row">
+      <h1 class="title">Open Source Projects</h1>
+    </div>
+    <script>
+      var projects = {{ site.projects | jsonify }};
+      var github_token = "{{ site.data.github.token }}";
+    </script>
+    <div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div id="projects" class="d-sm-flex flex-wrap mb-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

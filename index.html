@@ -1,0 +1,25 @@
+---
+layout: home
+title: Pythia
+menu: Home
+floating_navbar: true
+---
+
+<div class="parallax">
+  <header>
+    <div class="banner">
+      <!--h1 class="slogan">Open Source, Applied AI <span class="highlight-red">for All</span></h1-->
+      <h1 class="slogan"><span class="highlight-red">Applied AI</span> Systems and Tools</h1>
+      <div class="p-5 col text-center">
+        <a href="/about">
+          <button type="button" class="btn btn-normal btn-orange">
+            About us
+          </button>
+        </a>
+      </div>
+    </div>
+  </header>
+  {% for section in site.home_sections %}
+  {% include_relative _home/{{section}}.html %}
+  {% endfor %}
+</div>
